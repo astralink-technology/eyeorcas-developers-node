@@ -1,0 +1,164 @@
+//Landing page CSS start here
+.landing{
+  h1, h2, h3, h4{
+    font-weight:300;
+  }
+  .jumbotron  {
+    @include background-size(cover);
+    background-image: url('/img/landing-home-bg.png');
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    float:left;
+    width:100%;
+    padding:0px 32px;
+    margin:0px;
+    text-align:center;
+    color:$color-text-reversed;
+    h1{
+      font-size:em(32, $text-size-base);
+      font-weight: 500;
+      padding:60px 0px 12px 0px;
+    }
+    h2{
+      font-size:em(20, $text-size-base);
+      font-weight:300;
+    }
+    img{
+      margin: 30px 0px -40px 0px;
+      z-index: 10;
+      position: relative
+    }
+  }
+  section{
+    float:left;
+    width:100%;
+  }
+  .solution-introduction{
+    font-weight:400;
+    background-color:$color-brand-light-green;
+    color:$color-text-reversed;
+    text-align:center;
+    i{
+      font-size:em(48, $text-size-base);
+      padding:12px 0px 0px 0px;
+    }
+    h2{
+      font-size:em(24, $text-size-base);
+      font-weight:300;
+      margin:4px 0px 12px 0px;
+    }
+  }
+  .solution-details{
+    text-align:center;
+    padding:40px 0px;
+    h2{
+      font-weight:500;
+      font-size:em(32, $text-size-base);
+      padding:12px 0px 0px 0px;
+    }
+    p{
+      font-weight:300;
+      font-size:em(24, $text-size-base);
+      margin:0px 0px 20px 0px;
+    }
+  }
+  .product-details{
+    text-align:center;
+    padding:40px;
+    min-height: 640px;
+    h2{
+      font-weight:500;
+      font-size:em(24, $text-size-base);
+      margin:12px 0px 0px 0px;
+    }
+    p{
+      font-weight:300;
+      font-size:em(18, $text-size-base);
+      margin:8px 0px 20px 0px;
+      min-height:160px;
+    }
+  }
+  .product-office-station{
+    background-color:#e2e2e1;
+  }
+  .product-lifebox-hub{
+    background-color:#d3d3d3;
+  }
+  .product-visitor-station{
+    background-color:#c9c8c8;
+  }
+  .product-whs{
+    background-color:#afafaf;
+  }
+  .graphic-panel{
+    color:$color-text-reversed;
+    background-color:$color-layout-background;
+    text-align:center;
+    img{
+      width:80%;
+    }
+  }
+
+  /* responsive iphone, smartphone*/
+  @media only screen
+  and (min-width : 320px)
+  and (max-width : 568px) {
+    .jumbotron{
+      padding:0px 12px;
+      h1{
+        font-size:em(18, $text-size-base);
+        line-height:30px;
+        margin:0px;
+        padding:36px 0px 12px 0px;
+      }
+      h2{
+        font-size:em(12, $text-size-base);
+        margin:8px 0px 0px 0px;
+      }
+      img{
+        width:100%;
+        margin:18px 0px 20px 0px;
+      }
+    }
+    .graphic-panel-responsive{
+      img{
+        width:100%;
+        position:relative;
+        z-index:10;
+        margin:-18px 0px 0px 0px;
+      }
+    }
+
+    .solution-introduction{
+      i{
+        font-size:em(28, $text-size-base);
+        padding:8px 0px 0px 0px;
+      }
+      h2{
+        font-size:em(18, $text-size-base);
+        margin:4px 0px 8px 0px;
+      }
+    }
+
+    .solution-details{
+      padding:24px 0px;
+      img{
+        width:95%;
+      }
+      h2{
+        padding:0px;
+        font-size:em(20, $text-size-base);
+      }
+      p{
+        padding:0px 12px;
+        font-size: em(16, $text-size-base);
+      }
+    }
+  }
+
+    /* responsive tablets*/
+  @media only screen
+  and (min-width : 568px)
+  and (max-width : 1024px)  {
+  }
+}

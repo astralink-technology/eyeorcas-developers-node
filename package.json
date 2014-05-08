@@ -1,0 +1,18 @@
+{
+    "name": "astralink",
+    "private": true,
+    "dependencies": {
+        "express": "~3.2.6",
+        "jade": "~0.31.2",
+        "pg" : "*",
+        "knex" : "*",
+        "mandrill-api" : "*",
+        "moment" : "*",
+        "bcrypt" : "*",
+        "forever" : "*",
+        "express-ejs-layouts" : "*",
+        "ejs" : "*",
+        "restler" : "*",
+        "passport" : "*"
+    }
+}

@@ -1,0 +1,27 @@
+//Sass Mixin
+@import "../partials/_variables"; //variables
+@import "../lib/_normalize"; //IE normalizer
+@import "../lib/bourbon/bourbon"; //bourbon mixin
+@import "../lib/_compass_mixin"; //compass mixin
+@import "../lib/flags/_flags"; //country flags
+@import "../partials/bootstrap-eyeorcas-developers"; //bootstrap astralink customization
+
+//Core Variables
+@import "../partials/_variables";
+
+/*home pages */
+@import "landing";
+
+@include sticky-footer(300px,300px);
+
+/* responsive iphone, smartphone*/
+@media only screen
+and (min-width : 320px)
+and (max-width : 568px) {
+  @include sticky-footer(1000px,1000px);
+}
+/* responsive tablets*/
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)  {
+}
