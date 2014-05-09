@@ -8,11 +8,21 @@
 
 //Core Variables
 @import "../partials/_variables";
+@import "../partials/_layout";
+
 
 /*home pages */
-@import "landing";
+@import "_landing";
 
-@include sticky-footer(300px,300px);
+/*api pages */
+@import "_lifecare-api";
+@import "_core-api";
+@import "_remote-management-api";
+@import "_portal-api";
+@import "_get-started";
+@import "_helpers";
+
+@include sticky-footer(210px,210px);
 
 /* responsive iphone, smartphone*/
 @media only screen
@@ -20,6 +30,7 @@ and (min-width : 320px)
 and (max-width : 568px) {
   @include sticky-footer(1000px,1000px);
 }
+
 /* responsive tablets*/
 @media only screen
 and (min-width : 768px)

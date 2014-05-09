@@ -7,6 +7,12 @@ angular.module('eyeorcasDevelopersApp', [
     , 'duScroll'
     , 'ui.bootstrap'
     , 'eyeorcasDevelopersApp.landingController'
+    , 'eyeorcasDevelopersApp.coreApiController'
+    , 'eyeorcasDevelopersApp.portalApiController'
+    , 'eyeorcasDevelopersApp.remoteManagementApiController'
+    , 'eyeorcasDevelopersApp.lifecareApiController'
+    , 'eyeorcasDevelopersApp.helpersController'
+    , 'eyeorcasDevelopersApp.getStartedController'
     , 'eyeorcasDevelopersApp.dateTimeServices'
     , 'eyeorcasDevelopersApp.validationServices'
 ]).

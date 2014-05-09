@@ -1,22 +1,19 @@
 //Landing page CSS start here
-.landing{
-
+.get-started{
   .jumbotron{
     background-color:$color-text-reversed;
     background-image: url('/img/landing-background.png');
     background-position:50% 50%;
     background-repeat:no-repeat;
     @include background-size(cover);
-    text-align: center;
-    padding:120px 0px;
     h1{
-      font-size:em(32, $text-size-base);
       color:$color-muted-dark;
-      margin:12px 0px 4px 0px;
+      margin:12px 0px;
     }
-    p{
-      margin:0px 0px 12px 0px;
-    }
+  }
+  h2{
+    font-size:em(30, $text-size-base);
+    font-weight:500;
   }
   /* responsive iphone, smartphone*/
   @media only screen

@@ -5,8 +5,6 @@
 
 var express = require('express'),
     routes = require('./routes'),
-    core = require('./routes/core/'),
-    helperDemo = require('./routes/helper-demo'),
     expressLayouts = require('express-ejs-layouts'),
     http = require('http'),
     path = require('path');
@@ -46,19 +44,15 @@ if (app.get('env') === 'production') {
 /**
  * Routes
  */
+app.get('/core-api', routes.coreApi);
+app.get('/portal-api', routes.portalApi);
+app.get('/get-started', routes.getStarted);
+app.get('/remote-management-api', routes.remoteManagementApi);
+app.get('/lifecare-api', routes.lifecareApi);
+app.get('/helpers', routes.helpers);
 
 // serve web pages
 app.get('/', routes.index);
-
-// JSON API
-app.get ('/core/:base/:method', core);
-app.post ('/core/:base/:method', core);
-app.put ('/core/:base/:method', core);
-app.delete ('/core/:base/:method', core);
-
-//Helper Demos
-app.get ('/helper-demo/:base/:method', helperDemo);
-
 
 /**
  * Start Server

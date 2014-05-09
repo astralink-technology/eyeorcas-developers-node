@@ -934,125 +934,261 @@ table {
   margin-top: -113px;
   z-index: 10; }
 
+pre {
+  background-color: white; }
+
+.code-snippets {
+  display: inline-block;
+  font-weight: 500;
+  border: 0px;
+  padding: 2px 8px;
+  color: #777777;
+  border-radius: 0px; }
+
+html, body {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  float: left;
+  font-weight: 300; }
+
+body {
+  background-color: #f6f6f6; }
+
+.full-block {
+  width: 100%;
+  float: left; }
+
+.navbar {
+  margin-bottom: 0px;
+  border: 0px;
+  border-radius: 0px;
+  background-color: white; }
+  .navbar .navbar-brand {
+    font-weight: 500;
+    color: #04859d; }
+    .navbar .navbar-brand a:hover {
+      color: #04859d; }
+  .navbar .navbar-nav li a {
+    padding: 20px;
+    font-weight: 400; }
+  .navbar .navbar-nav li a:hover {
+    background-color: #04859d;
+    color: white; }
+
+#footer {
+  padding: 20px 0px;
+  background-color: #bbbbbb !important;
+  color: white; }
+  #footer h4 {
+    font-weight: 500;
+    font-size: 1.42857em;
+    color: #555555; }
+  #footer .list-unstyled li, #footer .list-unstyled a {
+    color: #555555;
+    font-size: 1em;
+    font-weight: 400; }
+  #footer .list-unstyled a:hover {
+    color: #777777; }
+  #footer .list-unstyled li {
+    margin: 4px 0px; }
+  #footer .list-inline {
+    margin: 0px; }
+    #footer .list-inline i {
+      font-size: 2.28571em; }
+  #footer .footer-credits {
+    float: left;
+    width: 100%;
+    margin: 20px 0px 0px 0px; }
+    #footer .footer-credits .copyright {
+      color: #555555;
+      font-weight: 500; }
+      #footer .footer-credits .copyright span {
+        text-align: right;
+        margin: 8px 0px 0px 0px;
+        float: right; }
+
+/* responsive iphone, smartphone*/
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .k-dropdown, .country-input, .phone-input {
+    width: 100%; }
+
+  .phone-input {
+    margin: 8px 0px 0px 0px !important; }
+
+  .responsive-phone-hide {
+    display: none !important; }
+
+  .responsive-phone-img-cover {
+    width: 100%;
+    float: left; }
+
+  .responsive-phone-show {
+    display: block; }
+
+  .navbar-sub-wrapper .navbar-nav {
+    margin: 0px; }
+  .navbar-sub-wrapper #bt-purchase {
+    padding: 15px; }
+
+  .navbar-brand img {
+    width: 80%;
+    padding: 8px 0px; }
+
+  .navbar-main .dropdown-toggle, .navbar-main .nav-link {
+    padding: 12px; }
+
+  #footer .col-md-2, #footer .col-md-1 {
+    margin: 20px 0px 0px 0px; }
+  #footer .ecosystem-list li, #footer .service-list li {
+    padding: 12px 0px;
+    border-top: none;
+    border-bottom: 1px solid white; }
+    #footer .ecosystem-list li a, #footer .service-list li a {
+      padding: 0px; }
+      #footer .ecosystem-list li a h4, #footer .service-list li a h4 {
+        margin: 0px; }
+  #footer h2 {
+    margin: 0px; }
+  #footer section div {
+    float: left;
+    width: 100%; }
+  #footer .astralink-contact {
+    text-align: center;
+    margin: 20px 0px 0px 0px; }
+    #footer .astralink-contact .logo-container {
+      display: block;
+      text-align: center;
+      margin: 0px 0px 12px 0px; }
+  #footer .cp-credits {
+    text-align: center; }
+    #footer .cp-credits img {
+      float: none; }
+    #footer .cp-credits p {
+      float: none;
+      display: block; } }
+/* responsive tablets*/
 /*home pages */
 .landing {
   /* responsive iphone, smartphone*/
   /* responsive tablets*/ }
-  .landing h1, .landing h2, .landing h3, .landing h4 {
-    font-weight: 300; }
   .landing .jumbotron {
+    background-color: white;
+    background-image: url("/img/landing-background.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-image: url("/img/landing-home-bg.png");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    float: left;
-    width: 100%;
-    padding: 0px 32px;
-    margin: 0px;
     text-align: center;
-    color: white; }
+    padding: 120px 0px; }
     .landing .jumbotron h1 {
       font-size: 2.28571em;
-      font-weight: 500;
-      padding: 60px 0px 12px 0px; }
-    .landing .jumbotron h2 {
-      font-size: 1.42857em;
-      font-weight: 300; }
-    .landing .jumbotron img {
-      margin: 30px 0px -40px 0px;
-      z-index: 10;
-      position: relative; }
-  .landing section {
-    float: left;
-    width: 100%; }
-  .landing .solution-introduction {
-    font-weight: 400;
-    background-color: #b0b942;
-    color: white;
-    text-align: center; }
-    .landing .solution-introduction i {
-      font-size: 3.42857em;
-      padding: 12px 0px 0px 0px; }
-    .landing .solution-introduction h2 {
-      font-size: 1.71429em;
-      font-weight: 300;
-      margin: 4px 0px 12px 0px; }
-  .landing .solution-details {
-    text-align: center;
-    padding: 40px 0px; }
-    .landing .solution-details h2 {
-      font-weight: 500;
-      font-size: 2.28571em;
-      padding: 12px 0px 0px 0px; }
-    .landing .solution-details p {
-      font-weight: 300;
-      font-size: 1.71429em;
-      margin: 0px 0px 20px 0px; }
-  .landing .product-details {
-    text-align: center;
-    padding: 40px;
-    min-height: 640px; }
-    .landing .product-details h2 {
-      font-weight: 500;
-      font-size: 1.71429em;
-      margin: 12px 0px 0px 0px; }
-    .landing .product-details p {
-      font-weight: 300;
-      font-size: 1.28571em;
-      margin: 8px 0px 20px 0px;
-      min-height: 160px; }
-  .landing .product-office-station {
-    background-color: #e2e2e1; }
-  .landing .product-lifebox-hub {
-    background-color: #d3d3d3; }
-  .landing .product-visitor-station {
-    background-color: #c9c8c8; }
-  .landing .product-whs {
-    background-color: #afafaf; }
-  .landing .graphic-panel {
-    color: white;
-    background-color: #f6f9e8;
-    text-align: center; }
-    .landing .graphic-panel img {
-      width: 80%; }
-  @media only screen and (min-width: 320px) and (max-width: 568px) {
-    .landing .jumbotron {
-      padding: 0px 12px; }
-      .landing .jumbotron h1 {
-        font-size: 1.28571em;
-        line-height: 30px;
-        margin: 0px;
-        padding: 36px 0px 12px 0px; }
-      .landing .jumbotron h2 {
-        font-size: 0.85714em;
-        margin: 8px 0px 0px 0px; }
-      .landing .jumbotron img {
-        width: 100%;
-        margin: 18px 0px 20px 0px; }
-    .landing .graphic-panel-responsive img {
-      width: 100%;
-      position: relative;
-      z-index: 10;
-      margin: -18px 0px 0px 0px; }
-    .landing .solution-introduction i {
-      font-size: 2em;
-      padding: 8px 0px 0px 0px; }
-    .landing .solution-introduction h2 {
-      font-size: 1.28571em;
-      margin: 4px 0px 8px 0px; }
-    .landing .solution-details {
-      padding: 24px 0px; }
-      .landing .solution-details img {
-        width: 95%; }
-      .landing .solution-details h2 {
-        padding: 0px;
-        font-size: 1.42857em; }
-      .landing .solution-details p {
-        padding: 0px 12px;
-        font-size: 1.14286em; } }
+      color: #777777;
+      margin: 12px 0px 4px 0px; }
+    .landing .jumbotron p {
+      margin: 0px 0px 12px 0px; }
+
+/*api pages */
+.lifecare-api {
+  /* responsive iphone, smartphone*/
+  /* responsive tablets*/ }
+  .lifecare-api .jumbotron {
+    background-color: white;
+    background-image: url("/img/landing-background.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .lifecare-api .jumbotron h1 {
+      color: #777777;
+      margin: 12px 0px; }
+
+.core-api {
+  /* responsive iphone, smartphone*/
+  /* responsive tablets*/ }
+  .core-api .jumbotron {
+    background-color: white;
+    background-image: url("/img/landing-background.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .core-api .jumbotron h1 {
+      color: #777777;
+      margin: 12px 0px; }
+
+.remote-management-api {
+  /* responsive iphone, smartphone*/
+  /* responsive tablets*/ }
+  .remote-management-api .jumbotron {
+    background-color: white;
+    background-image: url("/img/landing-background.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .remote-management-api .jumbotron h1 {
+      color: #777777;
+      margin: 12px 0px; }
+
+.portal-api {
+  /* responsive iphone, smartphone*/
+  /* responsive tablets*/ }
+  .portal-api .jumbotron {
+    background-color: white;
+    background-image: url("/img/landing-background.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .portal-api .jumbotron h1 {
+      color: #777777;
+      margin: 12px 0px; }
+
+.get-started {
+  /* responsive iphone, smartphone*/
+  /* responsive tablets*/ }
+  .get-started .jumbotron {
+    background-color: white;
+    background-image: url("/img/landing-background.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .get-started .jumbotron h1 {
+      color: #777777;
+      margin: 12px 0px; }
+  .get-started h2 {
+    font-size: 2.14286em;
+    font-weight: 500; }
+
+.helpers {
+  /* responsive iphone, smartphone*/
+  /* responsive tablets*/ }
+  .helpers .jumbotron {
+    background-color: white;
+    background-image: url("/img/landing-background.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .helpers .jumbotron h1 {
+      color: #777777;
+      margin: 12px 0px; }
 
 html, body {
   min-height: 100%; }
@@ -1060,14 +1196,14 @@ html, body {
 #root {
   clear: both;
   min-height: 100%;
-  margin-bottom: -300px; }
+  margin-bottom: -210px; }
   #root #root_footer {
-    height: 300px; }
+    height: 210px; }
 
 #footer {
   clear: both;
   position: relative;
-  height: 300px; }
+  height: 210px; }
 
 /* responsive iphone, smartphone*/
 @media only screen and (min-width: 320px) and (max-width: 568px) {

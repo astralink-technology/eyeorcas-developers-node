@@ -8,3 +8,16 @@
   margin-top:-113px;
   z-index:10;
 }
+
+pre{
+  background-color:$color-text-reversed;
+}
+
+.code-snippets{
+  display: inline-block;
+  font-weight: 500;
+  border: 0px;
+  padding: 2px 8px;
+  color:$color-muted-dark;
+  border-radius: 0px;
+}

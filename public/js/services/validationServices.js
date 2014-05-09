@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('astralinkApp.validationServices', []).
+angular.module('eyeorcasDevelopersApp.validationServices', []).
     factory('validationServices', function () {
     return {
         validateRequiredField: function (value, requiredMessage) {

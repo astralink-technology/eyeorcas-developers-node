@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('astralinkApp.dateTimeServices', []).
+angular.module('eyeorcasDevelopersApp.dateTimeServices', []).
     factory('dateTimeServices', function () {
     return {
         //add zeroes
