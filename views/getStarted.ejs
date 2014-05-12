@@ -2,26 +2,33 @@
     <h1>Getting Started</h1>
     <p>A brief description of the structure of eyeOrcas and how to use eyeOrcas portal</p>
 </div>
-<div class="col-md-12">
-    <h2>Overview</h2>
-    <p>eyeOrcas is developed in PANE stack - NodeJS, ExpressJS, AngularJS and PostgreSQL</p>
+<div class="col-md-9">
+    <div class="col-md-12">
+        <h2>Overview</h2>
+        <p>eyeOrcas is developed in PANE stack - NodeJS, ExpressJS, AngularJS and PostgreSQL</p>
+    </div>
+    <hr />
+    <div class="col-md-12">
+        <h2>API Structure</h2>
+        <pre>http://hostName/{apiType}/{base}/{action}</pre>
+        <ul class="list-unstyled">
+            <li><pre class="code-snippets">apiType</pre> - API type refers to the type the API one wishes to call. Types of API include core, eyeorcas, lifecare etc.</li>
+            <li><pre class="code-snippets">base</pre> - The key component to request, such as device / entity / image.</li>
+            <li><pre class="code-snippets">action</pre> - The method user requests for - getDevice / getEmail / getimage</li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h2>Default Node Packages</h2>
+        <ul class="list-unstyled">
+            <li><pre class="code-snippets">express</pre> ExpressJS - Default webserver package</li>
+            <li><pre class="code-snippets">bcrypt</pre> BCrypt - Encryption and hashing</li>
+            <li><pre class="code-snippets">mandrill-api</pre> Mandrill - mail sending</li>
+            <li><pre class="code-snippets">moment</pre> Moment - Date parsing utility</li>
+            <li><pre class="code-snippets">pg</pre> PostgreSQL Node - Postgres connection with NodeJs</li>
+            <li><pre class="code-snippets">express-ejs-layouts</pre> Embedded JS Layouts - HTML templating for express server</li>
+        </ul>
+    </div>
 </div>
-<hr />
-<div class="col-md-12">
-    <h2>API Structure</h2>
-    <pre>http://hostName/{apiType}/{base}/{action}</pre>
-    <ul class="list-unstyled">
-        <li><pre class="code-snippets">apiType</pre> - API type refers to the type the API one wishes to call. Types of API include core, eyeorcas, lifecare etc.</li>
-        <li><pre class="code-snippets">base</pre> - The key component to request, such as device / entity / image.</li>
-        <li><pre class="code-snippets">action</pre> - The method user requests for - getDevice / getEmail / getimage</li>
-    </ul>
-</div>
-<div class="col-md-12">
-    <h2>Node Modules</h2>
-    <pre>http://hostName/{apiType}/{base}/{action}</pre>
-    <ul class="list-unstyled">
-        <li><pre class="code-snippets">apiType</pre> - API type refers to the type the API one wishes to call. Types of API include core, eyeorcas, lifecare etc.</li>
-        <li><pre class="code-snippets">base</pre> - The key component to request, such as device / entity / image.</li>
-        <li><pre class="code-snippets">action</pre> - The method user requests for - getDevice / getEmail / getimage</li>
-    </ul>
+<div class="col-md-3">
+
 </div>

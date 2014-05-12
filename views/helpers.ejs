@@ -2,10 +2,95 @@
     <h1>Helpers</h1>
     <p>Friendly helper classes documented to help you develop faster</p>
 </div>
-<div class="col-md-12">
-    <h2>Crypt</h2>
-    <ul>
-        <li></li>
-        <li></li>
-    </ul>
+<div class="col-md-9">
+    <div class="col-md-12">
+        <h2>Authentication</h2>
+        <ul  class="list-unstyled">
+            <li>
+                <h3>Authenticate</h3>
+                <pre>authenticate(req, res, userString, pass, legacy, callback)</pre>
+                <p>Authenticate users to the web app using user's authentication string and user's password. Password decrypt
+                will call legacy method via cp-legacy if stated true via legacy parameters.</p>
+            </li>
+            <li>
+                <h3>Express Authentication</h3>
+                <pre>authenticateExpress(req, res, userString, authenticationId, callback)</pre>
+                <p>Authenticate users directly using user's authentication string and authentication ID via any functions.
+                User sessions will be automatically created and user details will be returned </p>
+            </li>
+            <li>
+                <h3>New Authentication</h3>
+                <pre>newAuthentication(req, res, userString, pass, firstName, lastName, callback)</pre>
+                <p>Create a new user and entity to the web app. Created user's details are returned in a JSON string for further
+                manipulation</p>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h2>Authentication</h2>
+        <ul  class="list-unstyled">
+            <li>
+                <h3>Authorization Levels</h3>
+                <pre>authorizationLevels(req, res, levelRequired)</pre>
+                <p>Detects authorization levels passed in and determines if page can be viewed by user.</p>
+            </li>
+            <li>
+                <h3>Already Authorized</h3>
+                <pre>alreadyAuthorized(req, res, redirectionPage)</pre>
+                <p>Detects if user has logged into the system and redirects user to the page passsed in.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h2>Cryptography</h2>
+        <ul  class="list-unstyled">
+            <li>
+                <h3>Encrypt</h3>
+                <pre>encrypt(req, res, string)</pre>
+                <p>Hash a string using the bCrypt method.</p>
+            </li>
+            <li>
+                <h3>Decrypt</h3>
+                <pre>decrypt(req, res, string, hash)</pre>
+                <p>Decrypt and compare the string with the original hashed password and check if both matches. Returns a true and false</p>
+            </li>
+            <li>
+                <h3>Legacy Decrypt</h3>
+                <pre>legacyDecrypt(req, res, string, hash, result)</pre>
+                <p>Calls cp-legacy API to decrypt and compare the string with the original hashed password and check if both matches using the legacy format.
+                    Returns a true and false</p>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h2>Date Time</h2>
+        <ul  class="list-unstyled">
+            <li>
+                <h3>Legacy Decrypt</h3>
+                <pre>utcNow(req, res)</pre>
+                <p>Returns a UTC string now </p>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h2>ID Generator</h2>
+        <ul  class="list-unstyled">
+            <li></li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h2>DB Connect</h2>
+        <ul  class="list-unstyled">
+            <li></li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h2>Mail Sender</h2>
+        <ul  class="list-unstyled">
+            <li></li>
+        </ul>
+    </div>
+</div>
+<div class="col-md-3">
+
 </div>
