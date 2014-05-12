@@ -939,6 +939,7 @@ pre {
 
 .code-snippets {
   display: inline-block;
+  margin: 8px 0px;
   font-weight: 500;
   border: 0px;
   padding: 2px 8px;
@@ -955,8 +956,7 @@ html, body {
 body {
   background-color: #f6f6f6; }
 
-.full-block {
-  width: 100%;
+.col-md-12 {
   float: left; }
 
 .navbar {
@@ -1032,7 +1032,6 @@ body {
     padding: 15px; }
 
   .navbar-brand img {
-    width: 80%;
     padding: 8px 0px; }
 
   .navbar-main .dropdown-toggle, .navbar-main .nav-link {
@@ -1082,7 +1081,9 @@ body {
     -o-background-size: cover;
     background-size: cover;
     text-align: center;
-    padding: 120px 0px; }
+    padding: 120px 0px;
+    float: left;
+    width: 100%; }
     .landing .jumbotron h1 {
       font-size: 2.28571em;
       color: #777777;

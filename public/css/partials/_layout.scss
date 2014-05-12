@@ -1,17 +1,16 @@
 //layout css here
 html, body{
-    width:100%;
-    height:auto;
-    height:100%;
-    float:left;
-    font-weight:300;
+  width:100%;
+  height:auto;
+  height:100%;
+  float:left;
+  font-weight:300;
 }
 body{
   background-color:$color-layout-background-muted;
 }
-.full-block{
-    width:100%;
-    float:left;
+.col-md-12{
+  float:left;
 }
 
 .navbar{
@@ -113,7 +112,6 @@ and (max-width : 568px) {
   }
   .navbar-brand{
     img{
-      width: 80%;
       padding:8px 0px;
     }
   }
