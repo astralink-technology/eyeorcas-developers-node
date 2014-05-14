@@ -2,3 +2,71 @@
     <h1>LifeCare API</h1>
     <p>LifeCare API for LifeCare Analytics</p>
 </div>
+<div class="col-md-9">
+    <div class="col-md-12">
+        <h2>Daily Analytics</h2>
+        <p>Daily analytics are analytics calculated at a specific time or at the end of the day to provide a report on the activities and wellness of the independent living.</p>
+        <ul  class="list-unstyled">
+            <li>
+                <h3>Wake up time</h3>
+                <p>Detects the first activity after 5am to 11am.</p>
+                <div class="alert alert-info">
+                    <h3>Special Cases <label class="label label-info">App Level Logic</label></h3>
+                    <p>When users are away, wake up time will not be calculated and no data points will be recorded for the night</p>
+                </div>
+            </li>
+            <hr />
+            <li>
+                <h3>Sleeping time</h3>
+                <p>Detects a 'last' activity between 11pm to 5am and 2 hours period of inactivity thereafter. Independent Living will be considered asleep</p>
+                <div class="alert alert-info">
+                    <h3>Calibration <label class="label label-info">App Level Logic</label></h3>
+                    <p>If there are no activity detected during 11pm to 5am, move the window start backwards by 1 hour. Re-calibrate if no activities are found. Threshold is up to 8pm.</p>
+                </div>
+            </li>
+            <hr />
+            <li>
+                <h3>Away Mode</h3>
+                <p>Detects door activity inactivity of 30 minutes thereafter in the premises is considered away</p>
+                <div class="alert alert-info">
+                    <h3>Estimation <label class="label label-info">Database Level Logic</label></h3>
+                    <p>If the first event since 12 am in the morning is door opening. Independent Living has not returned home since last night or last few days</p>
+                </div>
+            </li>
+            <hr />
+            <li>
+                <h3>Bathroom Patterns</h3>
+                <p>Detects bathroom usage duration of the independent every usage throughout the day. Bathroom usage duration will start counting when motion is detected while bathroom end of use will be calculated when independent living move to the next zone.</p>
+            </li>
+            <hr />
+            <li>
+                <h3>Sleeping Disruption</h3>
+                <p>Any activity detected from sleeping time to wake up time will be recorded. The quality of the sleep will be calculated with the formula below</p>
+
+                <div class="alert alert-info">
+                    <h3>Sleeping Quality Formula <label class="label label-info">App Level Logic</label></h3>
+                    <p>
+                        <b>Total Sleep Time </b> = Sleep Time + Wake up Time
+                        <br />
+                        <b>Time to Fall Asleep</b> = Default to 15 minutes
+                        <br />
+                        <b>Time Awakened </b> Detect the activity between sleeping and wake up time.
+                        <br />
+                        <b>Total Time Asleep </b> = Total Sleep Time - Time to fall asleep - Time awakened
+                        <br />
+                        <b>Final Percentage</b> = <b>Total Time Asleep / Total Sleep Time (%)</b>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--<div class="col-md-12">-->
+        <!--<h2>Real-time Analytics</h2>-->
+        <!--<p></p>-->
+        <!--<ul class="list-unstyled">-->
+        <!--</ul>-->
+    <!--</div>-->
+</div>
+<div class="col-md-3">
+
+</div>
