@@ -42,11 +42,28 @@
             <li>
                 <h3>Sleeping Disruption</h3>
                 <p>Any activity detected from sleeping time to wake up time will be recorded. The quality of the sleep will be calculated with the formula below</p>
+            </li>
+            <hr />
+            <li>
+                <h3>Sleeping Quality</h3>
+                <p>Any activity detected from sleeping time to wake up time will be recorded. The quality of the sleep will be calculated with the formula below</p>
 
+                <div class="alert alert-info">
+                    <h3>How To Get the Values <label class="label label-info">Database Level Logic</label></h3>
+                    <p>
+                        <b>Wakeup Time </b> = <a href="javascript:void(0)">Refer to Wake Up Analytics</a>
+                        <br />
+                        <b>Sleep Time </b> = <a href="javascript:void(0)">Refer to Sleep Analytics</a>
+                        <br />
+                        <b>Time to Fall Asleep</b> = 15 minutes
+                        <br />
+                        <b>Time Awakened </b> = <a href="javascript:void(0)">Refer to sleep disruption analytics</a>
+                    </p>
+                </div>
                 <div class="alert alert-info">
                     <h3>Sleeping Quality Formula <label class="label label-info">App Level Logic</label></h3>
                     <p>
-                        <b>Total Sleep Time </b> = Sleep Time + Wake up Time
+                        <b>Total Sleep Time </b> = Wakeup Time - Sleep Time
                         <br />
                         <b>Time to Fall Asleep</b> = Default to 15 minutes
                         <br />
